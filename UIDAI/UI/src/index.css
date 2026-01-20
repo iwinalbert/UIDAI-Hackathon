@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #131722;
+  --color-surface: #1e222d;
+  --color-border: #2a2e39;
+  --color-primary: #2962ff;
+  --color-success: #26a69a;
+  --color-danger: #ef5350;
+  --color-text: #d1d4dc;
+  --color-textSecondary: #787b86;
+  --color-grid: #1e222d;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;
+}
+
+@layer base {
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-background text-text overflow-hidden;
+  }
+}
+
+/* Scrollbar styling for a desktop-app feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #363a45;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a4f5e;
+}
