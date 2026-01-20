@@ -5,7 +5,7 @@
 
 import type { NewsArticle } from './newsService';
 
-const OPENROUTER_API_KEY = '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';
+const OPENROUTER_API_KEY = '';// insert the api key for the service
 const OPENROUTER_BASE_URL = 'https://openrouter.ai/api/v1/chat/completions';
 const MODEL_ID = 'xiaomi/mimo-v2-flash:free';
 
